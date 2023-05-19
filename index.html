@@ -15,7 +15,12 @@
 
     document.body.addEventListener("click", function() {
         window.open("https://cedarburg.instructure.com/courses/9281/files/1112105/preview");
-        alert("Cap Cap Cap");
+        //alert("Cap Cap Cap");
+        var tempText = document.createElement("h1");
+        tempText.innerText = "Cap Cap Cap";
+        tempText.style.top = (Math.random() * 100) + "%";
+        tempText.style.left = (Math.random() * 100) + "%";
+        document.body.appendChild(tempText);
     });
 
     async function animate() {
